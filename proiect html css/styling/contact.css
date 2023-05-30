@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* .container {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.7fr 2.7fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "welcome"
+      "informations"
+      "footer";
+} */
+
+/* daca las astea de sus pe care le am luat copy paste din Layoutit grid generator, imi strica asezarea */
+  
+.header { grid-area: header; }
+  
+.welcome { grid-area: welcome; }
+  
+.contact { grid-area: informations; }
+  
+.footer { grid-area: footer; }
+
+
+nav{
+    background-color: #141e4c;
+    height: 6.25rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  nav a{
+    color:#eaeaea;
+    font-size: 0.75rem;
+  }
+  
+  img{
+    margin-top: 0.313rem;
+    width: auto;
+    height: 3.75rem;
+    margin-left: 10.938rem;
+  } 
+  
+  .navbar {
+    overflow: hidden;
+    margin-right: 12.5rem;
+    font-weight: bold;
+    
+  }
+  
+  .navbar a {
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    border: none;
+    outline: none;
+    background-color: #141e4c;
+    color:#eaeaea;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    display: block;
+    text-align: right;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+.welcome{
+    background-color: #141e4c;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1{
+    text-align: center;
+    color: #eaeaea;
+    font-size: 3.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact h2{
+    margin-bottom: 1.75rem;
+    text-align: center;
+    padding-top: 1.75rem;
+    color: #101d42;
+    font-size: 1.75rem;
+    /* font-weight: bolder; */
+}
+
+.main-paragraph{
+    margin-bottom: 1.75rem;
+    font-size: 0.875rem;
+    color: #2b2922;
+    font-weight: bolder;
+    margin-left: 175px;
+    margin-right: 175px;
+}
+
+
+.contact-wrapper{
+    display: flex;
+    margin-bottom: 1.75rem;
+    margin-left: 10.938rem;
+    margin-right: 10.938rem;
+}
+
+
+.contact ul{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.contact li{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact .material-symbols-outlined{
+    vertical-align: middle;
+    color: #101d42;
+}
+
+.contact-wrapper p{
+    color: #2b2922;
+    font-size: 0.875rem;
+    font-weight: bolder;
+}
+
+.contact a{
+    color: #8e8e8e;
+    font-size: 0.875rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+
+
+.contact form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.contact label{
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    color: #2b2922;
+    font-weight: bolder;
+}
+
+.contact input{
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1.rem;
+    color: #2b2922;
+    font-size: 0.875rem;
+}
+
+.contact input submit{
+    background-color: #2bb686;
+    /* nu stiu sa fac legatura */
+}
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #101d42;
+}
+
+.footer p{
+    text-align: center;
+    font-size: 0.75rem;
+    color: #eaeaea;
+    padding: 1rem;
+}

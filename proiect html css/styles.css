@@ -1,0 +1,301 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  2.8em 2.1fr 0.8fr 1.9fr 1fr 0.4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "bine-ai-venit bine-ai-venit bine-ai-venit"
+      "calendar calendar calendar"
+      "descriereIT descriereIT descriereIT"
+      "parteneri parteneri parteneri"
+      "footer footer footer";
+}
+  
+.header { grid-area: header;}
+  
+.bine-ai-venit { grid-area: bine-ai-venit; }
+  
+.calendar { grid-area: calendar; }
+  
+.descriereIT { grid-area: descriereIT; }
+  
+.parteneri { grid-area: parteneri; }
+  
+.footer { grid-area: footer; }
+  
+
+nav{
+  background-color: #141e4c;
+  height: 6.25rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a{
+  color:#eaeaea;
+  font-size: 0.75rem;
+}
+
+img{
+  margin-top: 0.313rem;
+  width: auto;
+  height: 3.75rem;
+  margin-left: 10.938rem;
+} 
+
+.navbar {
+  overflow: hidden;
+  margin-right: 12.5rem;
+  font-weight: bold;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: #141e4c;
+  color:#eaeaea;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+
+
+
+.bine-ai-venit{
+  background-color:#141e4c;
+  margin-top: 3.438rem;
+  color:#eaeaea;
+}
+
+h1{
+  margin-top: 8.125rem;
+  margin-left: 10.938rem;
+  font-size: 3.5rem;
+  font-weight: bold;  
+  /* am incercat sa sterg bold si sa inlocuiesc cu font-weight: 700px; si nu vrea sa fie mai gros */
+}
+
+.paragrafe p{
+  margin-left: 10.938rem;
+  font-weight: bold; 
+  color:#eaeaea;
+  font-size: 1rem; 
+}
+
+.span{
+color:#fbb44c;
+}
+
+.bine-ai-venit img{
+  height: 1.5rem;
+  width: auto;
+  margin-left:1rem;
+}
+
+#more{
+  background-color:#2bb686;
+  border: 2px solid #2bb686;
+  border-radius: 0.313rem;
+  width: 16.25rem;
+  padding:1rem;
+  margin-top: 2.5rem;
+  margin-left: 10.938rem;
+  margin-bottom: 14.375rem;
+}
+
+#more a{
+  text-decoration: none;
+  color: #eaeaea;
+}
+
+#more :hover{
+  background-color: #141e4c;
+  border: 2px solid #2bb686;
+  width: 16.25rem;
+}
+
+
+
+
+
+
+
+.calendar h2{
+  text-align: center; 
+  color: #101d42;
+  /* font-weight: bold; */
+  font-weight: 43.75rem; 
+  /* nu vrea sa fie mai gros */
+  margin: 1.75rem;
+  font-size: 1.75rem;
+}
+
+.calendar h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight:700;
+}
+
+.tabel{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 3.125rem;
+  width: 50rem;
+  margin-left: 10.938rem;
+  margin-right: 10.938rem;
+}
+
+.course-wrapper{
+  border: 0.063rem solid #ddd;
+  width: 21rem;
+  height: max-content;
+  border-radius: 0.313rem;
+  padding: 0rem 0.313rem;
+  color: var(--secondcolor);
+  margin-bottom: 1.25rem;
+}
+
+.calendar .bar{
+  height: 0.25rem;
+  background-color: #2bb686;
+  border-radius: 0.625rem;
+  margin-top: 0.625rem;
+  margin-bottom: 0.313rem;
+}
+
+.course-wrapper .span{
+  font-size: 0.875rem;
+  color:#2b2922;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.descriereIT{
+  background-color: #dfedf5;
+  margin-top: 0.625rem;
+}
+
+.descriereIT h2{
+  font-size: 1.75rem;
+  padding-top: 1.75rem;
+  color: #101d42;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1.75rem;
+  /* nu merge weight */
+}
+
+#descriereParagraf{
+    margin-left: 10.938rem;
+    margin-right: 10.938rem;
+    color: #2b2922;
+    font-size: 0.875rem;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 1.75rem;
+    /* nu merge weight */
+    
+}
+
+.images-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 800;
+/* nici aici nu se schimba */
+}
+
+/* .image-wrapper{
+  height: 14.625rem;
+  padding: 0rem 0rem;
+} */
+
+
+
+
+
+.parteneri h2{
+  text-align: center;
+  font-size: 1.75rem;
+  color: #101d42;
+  margin-bottom: 1.75rem;
+  /* font-weight: 900; */
+}
+
+.parteneri .part-images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2.625rem;
+}
+
+
+
+
+.footer{
+  background-color: #101d42;
+}
+
+.footer p{
+  font-size: 0.75rem;
+  text-align: center;
+  color: #eaeaea;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer .container{
+  padding: 1rem;
+}

@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+
+.header { grid-area: header; }
+.welcome { grid-area: welcome; }
+.trainers { grid-area: trainers; }
+.footer { grid-area: footer; }
+
+/* .container{
+    max-width: 1200px;
+    min-width: 320px;
+    margin: auto;
+    padding: 1rem;
+} */
+
+/* am incercat sa pun aceleasi dimesiuni cum este in original dar nu se aseaza bine */
+
+  
+nav{
+  background-color: #141e4c;
+  height: 6.25rem;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a{
+  color:#eaeaea;
+  font-size: 0.75rem;
+}
+
+img{
+  margin-top: 0.313rem;
+  width: auto;
+  height: 3.75rem;
+  margin-left: 10.938rem;
+} 
+
+.navbar {
+  overflow: hidden;
+  margin-right: 12.5rem;
+  font-weight: bold;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: #141e4c;
+  color:#eaeaea;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  display: block;
+  text-align: right;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.welcome{
+    background-color: #141e4c;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1{
+    text-align: center;
+    color: #eaeaea;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
+
+
+
+.container-grid{
+    margin-left: 10.938rem;
+    margin-right: 10.938rem;
+
+}
+
+
+
+.trainers-container {
+    padding-bottom:1.75rem;
+    display: flex;
+    /* flex-wrap: wrap;
+    width: 700px; */
+}
+
+
+.trainer-wrapper{
+    width: 25%;
+    min-height: 21.875rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 2.625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper {
+    width: 9.375rem;
+    height: 9.375rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -70px;
+}
+
+.trainer-wrapper img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.trainer-wrapper h3 {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    background-color: #141e4c;
+    border-radius: 5px;
+    padding: 0.25rem;
+    margin-bottom: 1rem;
+    margin-top: -25px;
+    z-index: 1;
+    color: #fbb44c;
+}
+
+p{
+    color: #2b2922;
+    font-size: 0.875rem;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: #101d42;
+  }
+
+.footer p{
+    text-align: center;
+    font-size: 0.75rem;
+    color: #eaeaea;
+    padding: 1rem;
+  }
